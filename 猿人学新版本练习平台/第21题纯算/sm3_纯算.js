@@ -81,7 +81,7 @@ function digestByInput(input) {
 }
 
 function getToken(page = 1, timestamp = Date.now()) {
-  return digestByInput(String(timestamp) + (String(page) & 37));
+  return digestByInput(String(timestamp) + (String(page)));
 }
 
 console.log(getToken(1,1779710177404))
